@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Friday Beacon — 75 real Black Friday deals</title>
+<meta name="description" content="Black Friday Beacon: 75 real Black Friday deals, each checked 27 Nov 2026, with sale price, usual price, discount and source. Search and filter by category, store and discount.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="eyebrow">Black Friday 2026 &middot; Deal finder</p>
+    <h1>Black Friday Beacon</h1>
+    <p class="tagline">Real deals, checked today — the strongest price cuts first, the routine sales called out for what they are.</p>
+    <p class="meta"><strong>75 deals</strong> &middot; Prices checked 27 Nov 2026, 13:20 WIB &middot; Prices in USD</p>
+  </div>
+</header>
+<main class="wrap">
+  <p class="how"><strong>How prices were checked:</strong> prices were read from the named deal sources on 27 Nov 2026. Each deal links to the source article naming its store and price. No product URL was invented.</p>
+
+  <section class="controls" aria-label="Search and filter deals">
+    <label class="field search">Search
+      <input type="search" id="search" placeholder="Search a product or store&hellip;" autocomplete="off">
+    </label>
+    <label class="field">Category
+      <select id="category"><option value="All">All categories</option></select>
+    </label>
+    <label class="field">Store
+      <select id="store"><option value="All">All stores</option></select>
+    </label>
+    <label class="field">Discount
+      <select id="minoff">
+        <option value="0">Any discount</option>
+        <option value="20">20%+ off</option>
+        <option value="30">30%+ off</option>
+        <option value="40">40%+ off</option>
+        <option value="50">50%+ off</option>
+      </select>
+    </label>
+    <label class="field">Sort by
+      <select id="sort">
+        <option value="discount">Biggest discount</option>
+        <option value="saved">Biggest $ saved</option>
+        <option value="price">Lowest price</option>
+        <option value="verdict">Best verdict</option>
+      </select>
+    </label>
+  </section>
+
+  <p class="count-line"><strong id="count">75 deals</strong> found</p>
+  <p class="empty" id="empty" hidden>No deals match those filters. Try clearing the search or lowering the discount.</p>
+  <div class="grid" id="deals"></div>
+
+  <footer>
+    <p>Prices change fast on Black Friday — verify the price at checkout before you buy.</p>
+    <p>Black Friday Beacon is an independent deal finder. Store names belong to their owners; deals link out to the sources that reported them.</p>
+  </footer>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
